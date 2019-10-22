@@ -1,0 +1,10 @@
+var questions = [
+    {
+        question: "What is your nickname?",
+        answers: {
+        a: "bubba",
+        b: "bobby",
+        c: "bisquick"
+        }
+    }
+];

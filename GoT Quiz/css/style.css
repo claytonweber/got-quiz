@@ -1,0 +1,36 @@
+li {
+    list-style: none;
+}
+
+button {
+    display: inline;
+}
+
+h4 {
+    display: inline;
+    color: black;
+}
+
+input {
+    width: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+#answer-bank div, li {
+  display: none;
+}
+
+#answer-bank div:first-child  {
+  display: block;
+}
+
+#answer-bank li  {
+}
+
+.answer0 {
+  display: block;
+}
+

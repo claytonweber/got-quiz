@@ -1,0 +1,216 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+$erakHeight: 550px;
+$tosinTop: $erakHeight;
+$carouselHeight: 400px;
+body {
+    background: red; 
+}
+a {
+    color: black;
+}
+
+h1 {
+    font-family: azo-sans-web, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 400%;
+    color: red;
+}
+.navbar {
+    background-image: none;
+    background-color: red;
+}
+.icon-danger {
+    color: red;
+}
+
+.icon-danger:hover{
+    color: black;    
+}
+
+section {
+    
+    #aOTM {
+        background: white;
+        .carousel {
+            width: 100%;
+            margin: 0 auto;
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        position: relative;
+                        width: 100%;
+                        min-height: 300px;
+                    }
+                }
+            }
+        }
+        padding: 20px 0; //gives some space between sections
+        margin-bottom: 20px;
+        
+        .slide {
+            padding: 5px 0 0 0;
+        }
+        
+    } 
+    
+    #mobile-app {
+        background: white;
+        padding-top: 20px;
+        h2 {
+            padding-top: 20px;
+        }
+    }
+    
+    #reviews {
+        h2 {
+            color: white;
+        }
+        .card-header {
+        }
+        .card {
+            background: none;
+            height: auto;
+            .card-block {
+                
+                h6 {
+                    font-size: 150%;
+                }
+                
+                p {
+                    font-size: 120%;
+                }
+            }
+        }
+        .card:hover {
+            background: yellow;
+        }
+    }
+    
+    #tabs {
+        
+        ul {
+            list-style: none;
+
+        }
+        li {
+        }
+        li:hover {
+            background:yellow;
+        }
+    }
+    
+    
+}
+#aotm-section {
+    background: white;
+}
+footer {
+    .fa-facebook, .fa-twitter, .fa-instagram, .fa-twitch {
+        font-size: 200%;
+    }
+    h1 {
+        font-size: 100%;
+    }
+    ul {
+        li:hover {
+            background: white;
+        }
+    }
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    font-size:200%
+}
+
+//gets rid of the padding that bootstrap adds
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    body {
+        background: red; 
+    }
+    a {
+        color: black;
+    }
+
+    h1 {
+        font-family: azo-sans-web, sans-serif;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 700%;
+        color: red;
+    }
+    .nav-item {
+        font-size: 175%;
+    }
+    section {
+        #aotm {
+            width: 100%;
+            .carousel {
+                margin: 0 auto;
+                min-height: 800px;
+
+                .carousel-inner {
+                    min-height: 800px;
+                    .carousel-item {
+                        img {
+                            height: $carouselHeight * 2;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            background: white;
+            
+        }
+        
+        #reviews {
+            .review {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    .arrow {
+        color: black;
+        border: 2px solid white;
+        display: flex;
+    }
+
+    .arrow:hover {
+    //    border: 2px solid black;
+        animation: fillBar 1s;
+    }
+
+    @keyframes fillBar {
+        0% {background:none}
+        100% {background: black;}
+    }
+
+    #rightArrow, #leftArrow {
+        font-size: 200%;
+    }
+    #clear-floats { clear: both;}
+}
